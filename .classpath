@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="src/" kind="src" path=""/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="biblioteca/postgresql-42.2.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="biblioteca/com.lowagie.text-2.1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="biblioteca/commons-beanutils-1.8.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="biblioteca/commons-digester-2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="biblioteca/commons-javaflow.jar"/>
+	<classpathentry exported="true" kind="lib" path="biblioteca/commons-logging-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="biblioteca/commons.collections-3.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="biblioteca/jasperreports-6.3.0.jar"/>
+	<classpathentry kind="lib" path="biblioteca/jasperreports-fonts-4.5.1.jar"/>
+	<classpathentry kind="lib" path="biblioteca/JTattooDemo.jar"/>
+	<classpathentry kind="lib" path="biblioteca/UpperEssentialLookAndFeel.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

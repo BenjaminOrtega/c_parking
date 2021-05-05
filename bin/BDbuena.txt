@@ -1,0 +1,42 @@
+﻿  create table persona(
+  id_persona serial,
+  nombre varchar(100),
+  Apellidos varchar(100),
+  telefono varchar(10),
+  direccion varchar(50),
+  email varchar(100),
+  primary key(id_persona));
+
+create table auto(
+  id_auto serial,
+  n_placas varchar(100),
+  color varchar(100),
+  marca varchar(100),
+  tipo varchar(50),
+  modelo varchar(100),
+  observaciones varchar(500),
+  primary key(id_auto));
+
+create table area_estacionamiento(
+  id_estacionamiento serial,
+  tamano varchar(20),
+  altura float,
+  estatus varchar(20),
+  piso int,
+  primary key(id_estacionamiento));
+
+create table r_ingresos(
+  id_registro serial,
+  id_persona serial,
+  id_auto serial,
+  id_estacionamiento serial,
+  hora_entrada time,
+  fecha_registro date,
+  hora_salida time,
+  fecha_salida date,
+  costo int,
+  primary key(id_registro),
+  constraint id_persona foreign key (id_persona)references persona(id_persona),
+  constraint id_auto foreign key (id_auto)references auto(id_auto),
+  constraint id_estacionamiento foreign key (id_estacionamiento)references area_estacionamiento(id_estacionamiento));
+
